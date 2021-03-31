@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+.front
+{
+    display: flex;
+    flex-direction: column;
+}
+.btnhover
+{
+    background: url(jerry.png);
+    height: 73px;
+    width: 10vh;
+    position: absolute;
+    top: 47%;
+    left: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#btn
+{
+    position: absolute;
+    top: 50vh;
+    left: 37%;
+    width: 43vh;
+    height: 7vh;
+    font-size: 27px;
+    border: none;
+    border-radius: 33px;
+    background: blueviolet;
+    color: white;
+    display: block;
+    font-family: fangsong;
+}
+#btn:hover
+{
+    background-color: rgba(137, 43, 226, 0.433);
+    cursor: pointer;
+    color: black;
+}
+.front a
+{
+    position: absolute;
+    bottom: 9px;
+    /* justify-content: center; */
+    text-align: center;
+    text-decoration: none;
+    font-family: cursive;
+    background: black;
+    color: white;
+    font-size: 13px;
+}
+.container
+{
+    display: none;
+}
+#score {
+    float: right;
+    position: relative;
+    background: #836ad299;
+    padding: 3%;
+    font-family: fantasy;
+    font-size: 99%;
+    color: black;
+}
+
+.jerry {
+    background: url(jerry.png);
+    background-repeat: no-repeat;
+    width: 8%;
+    height: 15vh;
+    background-size: 12vh;
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 7%;
+}
+
+.heading {
+    font-size: 25px;
+    text-align: center;
+    font-family: cursive;
+    color: #480f0f;
+    background: #faebd782;
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    font-size: 25px;
+    text-align: center;
+    font-family: fantasy;
+    color: #c7c7c7;
+    background: #924d7a85;
+    display: flex;
+    justify-content: center;
+}
+
+.over {
+    text-align: center;
+    font-size: 78px;
+    font-family: fantasy;
+    color: #1e094e;
+    background: #f5f5dc36;
+    display: none;
+    visibility: hidden;
+}
+
+#funny {
+    color: #f1f1f1;
+    height: 54%;
+    width: 83%;
+    background-color: #000000c9;
+    font-size: 17px;
+    padding: 7px;
+    font-family: sans-serif;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+.logo {
+    height: 33vh;
+    width: 27vh;
+    position: absolute;
+    top: 0;
+    left: 7%;
+}
+
+.details {
+    height: 14vh;
+    width: 35vh;
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    font-size: 17px;
+    color: #2586fffa;
+    background: #000000a6;
+    padding: 12px;
+}
+
+.tom {
+    background: url(tom.png);
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 21vh;
+    background-size: 22vh;
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.animatejerry {
+    animation: jerry 0.6s linear;
+}
+
+.animatejerryleft {
+    animation: jerryleft 0.5s linear;
+}
+
+.animatetom {
+    animation: animatetom 5s linear infinite;
+}
+
+@keyframes animatetom {
+    0% {
+        left: 100vw;
+    }
+    100% {
+        left: -10vw;
+    }
+}
+
+@keyframes jerry {
+    0% {
+        bottom: 0px;
+    }
+    50% {
+        bottom: 322px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes jerryleft {
+    /* 0%
+    {
+        left:0px;
+    } */
+    100% {
+        left: 350px;
+    }
+    /* 100%
+    {
+        left:0px;
+    } */
+}
+
+@media only screen and (max-width: 800px) {
+    .tom {
+        width: 22%;
+        height: 14vh;
+        background-size: 11vh;
+    }
+    .jerry {
+        width: 13%;
+        height: 11vh;
+        background-size: 8vh;
+    }
+    .details {
+        height: 10vh;
+        width: 53vh;
+        position: absolute;
+        top: 64.5%;
+        font-size: 17px;
+        color: #1e8060;
+        background: #000000c4;
+        padding: 12px;
+        left: 0vh;
+    }
+    .logo {
+        height: 25vh;
+        width: 17vh;
+        top: 22px;
+        left: -5%;
+    }
+    #funny {
+        height: 16vh;
+        width: 100%;
+        font-size: 14px;
+        padding: 7px;
+    }
+    .over {
+        font-size: 48px;
+    }
+}
